@@ -2,7 +2,7 @@
 
 ## Before You Start
 
-- [ ] Check package name availability: `npm search awesome-components`
+- [ ] Check package name availability: `npm search awesome-components-react`
 - [ ] Choose final package name (update in `package.json` if needed)
 - [ ] Create NPM account at https://www.npmjs.com/signup
 - [ ] Generate NPM access token (Automation type)
@@ -23,10 +23,10 @@ npm test
 # 4. Initialize git
 git init
 git add .
-git commit -m "Initial commit: awesome-components library"
+git commit -m "Initial commit: awesome-components-react library"
 
 # 5. Add GitHub remote (REPLACE YOUR-USERNAME!)
-git remote add origin https://github.com/YOUR-USERNAME/awesome-components.git
+git remote add origin https://github.com/YOUR-USERNAME/awesome-components-react.git
 
 # 6. Push to GitHub (this triggers auto-publish!)
 git branch -M main
@@ -35,7 +35,7 @@ git push -u origin main
 
 ## GitHub Secrets Setup
 
-1. Go to: https://github.com/YOUR-USERNAME/awesome-components/settings/secrets/actions
+1. Go to: https://github.com/YOUR-USERNAME/awesome-components-react/settings/secrets/actions
 2. Click "New repository secret"
 3. Name: `NPM_TOKEN`
 4. Value: [Paste your NPM access token]
@@ -45,10 +45,10 @@ git push -u origin main
 
 After pushing to GitHub:
 
-1. Check GitHub Actions: https://github.com/YOUR-USERNAME/awesome-components/actions
+1. Check GitHub Actions: https://github.com/YOUR-USERNAME/awesome-components-react/actions
 2. Wait for workflow to complete (~2-3 minutes)
-3. Check NPM: https://www.npmjs.com/package/awesome-components
-4. Test installation: `npm install awesome-components`
+3. Check NPM: https://www.npmjs.com/package/awesome-components-react
+4. Test installation: `npm install awesome-components-react`
 
 ## Quick Test
 
@@ -56,11 +56,11 @@ After pushing to GitHub:
 # Create test project
 npx create-react-app test-app
 cd test-app
-npm install awesome-components
+npm install awesome-components-react
 
 # Test in src/App.js:
-import { Button } from 'awesome-components';
-import 'awesome-components/styles.css';
+import { Button } from 'awesome-components-react';
+import 'awesome-components-react/styles.css';
 
 function App() {
   return <Button variant="primary">It works!</Button>;
@@ -69,7 +69,7 @@ function App() {
 
 ## ✅ Done!
 
-Your package is live at: `npm install awesome-components`
+Your package is live at: `npm install awesome-components-react`
 
 ## Future Updates
 

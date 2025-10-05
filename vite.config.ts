@@ -17,7 +17,7 @@ export default defineConfig({
             entry: resolve(__dirname, 'src/index.ts'),
             name: 'AwesomeComponents',
             formats: ['es', 'cjs'],
-            fileName: (format) => `awesome-components.${format === 'es' ? 'esm' : 'cjs'}.js`
+            fileName: (format) => `awesome-components-react.${format === 'es' ? 'esm' : 'cjs'}.js`
         },
         rollupOptions: {
             external: ['react', 'react-dom'],

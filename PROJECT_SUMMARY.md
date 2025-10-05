@@ -5,6 +5,7 @@
 A **production-ready React component library** with:
 
 ### ✅ Complete Component Set (15 Components)
+
 1. **Button** - Multiple variants (primary, secondary, outline, danger)
 2. **Input** - With labels, errors, helper text
 3. **TextArea** - Multi-line text input
@@ -22,6 +23,7 @@ A **production-ready React component library** with:
 15. **Breadcrumb** - Navigation breadcrumbs
 
 ### ✅ Professional Setup
+
 - **TypeScript** - Full type safety
 - **Vite** - Lightning-fast bundling
 - **ESM + CJS** - Both module formats
@@ -31,6 +33,7 @@ A **production-ready React component library** with:
 - **Accessibility** - ARIA attributes included
 
 ### ✅ Automated Publishing
+
 - **GitHub Actions** - Auto-publish on merge to main
 - **Version Bumping** - Automatic patch versioning
 - **NPM Publishing** - Direct to registry
@@ -39,7 +42,7 @@ A **production-ready React component library** with:
 ## 📦 Project Structure
 
 ```
-awesome-components/
+awesome-components-react/
 ├── .github/
 │   └── workflows/
 │       └── publish.yml          # Auto-publish workflow
@@ -88,16 +91,19 @@ npm run lint
 ## 📋 Pre-Publishing Checklist
 
 1. **Update package.json**:
+
    - [ ] Change package name if needed
    - [ ] Update repository URL
    - [ ] Set your author name
 
 2. **NPM Setup**:
+
    - [ ] Create NPM account
    - [ ] Generate NPM automation token
    - [ ] Add token to GitHub secrets as `NPM_TOKEN`
 
 3. **GitHub Setup**:
+
    - [ ] Create GitHub repository
    - [ ] Initialize git and push code
    - [ ] Verify Actions are enabled
@@ -112,12 +118,12 @@ npm run lint
 Once published, users can:
 
 ```bash
-npm install awesome-components
+npm install awesome-components-react
 ```
 
 ```tsx
-import { Button, Modal, Input, Card } from 'awesome-components';
-import 'awesome-components/styles.css';
+import { Button, Modal, Input, Card } from "awesome-components-react";
+import "awesome-components-react/styles.css";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -126,9 +132,7 @@ function App() {
     <div>
       <Card header="Welcome">
         <Input label="Email" type="email" />
-        <Button onClick={() => setIsOpen(true)}>
-          Open Modal
-        </Button>
+        <Button onClick={() => setIsOpen(true)}>Open Modal</Button>
       </Card>
 
       <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
@@ -142,17 +146,19 @@ function App() {
 ## 🎯 Key Features
 
 ### Tree-Shaking Support
+
 ```tsx
 // Only Button code is included in final bundle
-import { Button } from 'awesome-components';
+import { Button } from "awesome-components-react";
 ```
 
 ### TypeScript Autocomplete
+
 ```tsx
 // Full IntelliSense support
-<Button 
+<Button
   variant="primary" // autocomplete: primary | secondary | outline | danger
-  size="md"         // autocomplete: sm | md | lg
+  size="md" // autocomplete: sm | md | lg
   disabled={false}
 >
   Click me
@@ -160,6 +166,7 @@ import { Button } from 'awesome-components';
 ```
 
 ### Theming via CSS Variables
+
 ```css
 :root {
   --ac-primary: #3b82f6;
@@ -171,6 +178,7 @@ import { Button } from 'awesome-components';
 ## 🔄 Publishing Workflow
 
 ### Automatic (Recommended)
+
 1. Make changes
 2. Commit and push to `main`
 3. GitHub Actions automatically:
@@ -181,6 +189,7 @@ import { Button } from 'awesome-components';
    - Creates GitHub release
 
 ### Manual
+
 ```bash
 npm run build
 npm version patch  # or minor/major
@@ -198,12 +207,15 @@ git push --tags
 ## 🐛 Troubleshooting
 
 ### Build Issues
+
 The TypeScript errors you see are normal - they'll resolve when you run:
+
 ```bash
 npm install
 ```
 
 ### Publishing Issues
+
 - Verify NPM_TOKEN is set in GitHub secrets
 - Ensure package name is unique on NPM
 - Check you're logged in: `npm whoami`

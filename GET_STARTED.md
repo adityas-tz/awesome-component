@@ -2,11 +2,12 @@
 
 ## ✅ Project Successfully Created!
 
-Your React component library `awesome-components` is now **fully set up and ready to use**!
+Your React component library `awesome-components-react` is now **fully set up and ready to use**!
 
 ### 📦 What's Included
 
 **15 Production-Ready Components:**
+
 - ✅ Button (4 variants)
 - ✅ Input (with validation)
 - ✅ TextArea
@@ -24,6 +25,7 @@ Your React component library `awesome-components` is now **fully set up and read
 - ✅ Breadcrumb
 
 **Professional Features:**
+
 - ✅ TypeScript for type safety
 - ✅ Vite for fast builds
 - ✅ ESM + CommonJS support
@@ -36,26 +38,33 @@ Your React component library `awesome-components` is now **fully set up and read
 ### 🚀 Next Steps
 
 **1. View Your Components (Recommended First Step!)**
+
 ```bash
 npm run storybook
 ```
+
 This will open Storybook at http://localhost:6006 where you can see all 15 components in action!
 
 **2. Try the Demo App**
+
 ```bash
 npm run dev
 ```
+
 View at http://localhost:5173 to see components integrated in a real app.
 
 **3. Build the Library**
+
 ```bash
 npm run build
 ```
+
 Creates production-ready bundles in the `dist/` folder.
 
 ### 📝 Before Publishing to NPM
 
 1. **Update `package.json`:**
+
    - Change `name` to your desired package name (must be unique on NPM)
    - Update `repository.url` to your GitHub repo
    - Add your name in `author` field
@@ -65,8 +74,8 @@ Creates production-ready bundles in the `dist/` folder.
    - Generate an **Automation Token**:
      - Go to npmjs.com → Access Tokens → Generate New Token
      - Select "Automation" type
-   
 3. **Add NPM Token to GitHub:**
+
    - Go to your GitHub repo → Settings → Secrets and variables → Actions
    - Click "New repository secret"
    - Name: `NPM_TOKEN`
@@ -125,12 +134,12 @@ npm publish            # Publish to NPM
 ### 🎨 Usage Example (After Publishing)
 
 ```bash
-npm install awesome-components
+npm install awesome-components-react
 ```
 
 ```tsx
-import { Button, Modal, Input } from 'awesome-components';
-import 'awesome-components/styles.css';
+import { Button, Modal, Input } from "awesome-components-react";
+import "awesome-components-react/styles.css";
 
 function App() {
   return (
@@ -148,9 +157,9 @@ All components use CSS variables for easy theming. Edit `src/styles/index.css`:
 
 ```css
 :root {
-  --ac-primary: #3b82f6;        /* Your brand color */
+  --ac-primary: #3b82f6; /* Your brand color */
   --ac-primary-hover: #2563eb;
-  --ac-font-family: 'Your Font', sans-serif;
+  --ac-font-family: "Your Font", sans-serif;
   /* ... and many more */
 }
 ```
@@ -171,6 +180,7 @@ See **CONTRIBUTING.md** for detailed instructions.
 The npm install showed some deprecation warnings - these are from dependencies and don't affect functionality. The library is production-ready!
 
 To address security issues (optional):
+
 ```bash
 npm audit fix
 ```
@@ -178,6 +188,7 @@ npm audit fix
 ### 🎯 Success Metrics
 
 Your library is ready when:
+
 - ✅ `npm run storybook` shows all components
 - ✅ `npm run build` completes without errors
 - ✅ `npm test` passes
@@ -187,6 +198,7 @@ Your library is ready when:
 ### 🚨 Important Notes
 
 1. **First Publish**: The first time you publish, you might need to run:
+
    ```bash
    npm publish --access public
    ```
@@ -205,6 +217,7 @@ Your library is ready when:
 ### 🎊 Congratulations!
 
 You now have a **professional-grade React component library** with:
+
 - ✨ Beautiful, accessible components
 - 📦 Automated NPM publishing
 - 📖 Interactive documentation
@@ -217,6 +230,7 @@ You now have a **professional-grade React component library** with:
 ---
 
 **Ready to see your components?** Run:
+
 ```bash
 npm run storybook
 ```

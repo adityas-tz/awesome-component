@@ -20,21 +20,21 @@ const options = [
 ];
 
 export const Default: Story = {
-    render: () => {
+    render: function DefaultRender() {
         const [value, setValue] = useState('');
         return <Dropdown options={options} value={value} onChange={setValue} />;
     },
 };
 
 export const WithLabel: Story = {
-    render: () => {
+    render: function WithLabelRender() {
         const [value, setValue] = useState('');
         return <Dropdown label="Select a fruit" options={options} value={value} onChange={setValue} />;
     },
 };
 
 export const WithError: Story = {
-    render: () => {
+    render: function WithErrorRender() {
         const [value, setValue] = useState('');
         return (
             <Dropdown

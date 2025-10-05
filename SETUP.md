@@ -6,8 +6,8 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/awesome-components.git
-cd awesome-components
+git clone https://github.com/yourusername/awesome-components-react.git
+cd awesome-components-react
 
 # Install dependencies
 npm install
@@ -37,8 +37,9 @@ npm run build
 ```
 
 The build will create:
-- `dist/awesome-components.esm.js` - ES module
-- `dist/awesome-components.cjs.js` - CommonJS module
+
+- `dist/awesome-components-react.esm.js` - ES module
+- `dist/awesome-components-react.cjs.js` - CommonJS module
 - `dist/index.d.ts` - TypeScript definitions
 - `dist/style.css` - Bundled styles
 
@@ -48,7 +49,8 @@ The build will create:
 
 1. **NPM Account**: Create an account at [npmjs.com](https://www.npmjs.com)
 
-2. **NPM Token**: 
+2. **NPM Token**:
+
    - Login to NPM: `npm login`
    - Generate token: Go to npmjs.com → Access Tokens → Generate New Token
    - Select "Automation" token type
@@ -64,12 +66,13 @@ The build will create:
 ### First-Time Setup
 
 1. **Update package.json**:
+
    ```json
    {
-     "name": "awesome-components",  // Change if needed (must be unique on NPM)
+     "name": "awesome-components-react", // Change if needed (must be unique on NPM)
      "repository": {
        "type": "git",
-       "url": "https://github.com/yourusername/awesome-components.git"
+       "url": "https://github.com/yourusername/awesome-components-react.git"
      }
    }
    ```
@@ -80,7 +83,7 @@ The build will create:
    git add .
    git commit -m "feat: initial commit"
    git branch -M main
-   git remote add origin https://github.com/yourusername/awesome-components.git
+   git remote add origin https://github.com/yourusername/awesome-components-react.git
    git push -u origin main
    ```
 
@@ -123,14 +126,14 @@ git push origin main --tags
 ### Installation
 
 ```bash
-npm install awesome-components
+npm install awesome-components-react
 ```
 
 ### Usage
 
 ```tsx
-import { Button, Modal, Input } from 'awesome-components';
-import 'awesome-components/styles.css';
+import { Button, Modal, Input } from "awesome-components-react";
+import "awesome-components-react/styles.css";
 
 function App() {
   return (
@@ -169,14 +172,16 @@ npm run build-storybook
 1. Create component folder: `src/components/NewComponent/`
 
 2. Create files:
+
    - `NewComponent.tsx` - Component implementation
    - `NewComponent.css` - Component styles
    - `NewComponent.stories.tsx` - Storybook stories
 
 3. Export from `src/index.ts`:
+
    ```typescript
-   export { NewComponent } from './components/NewComponent/NewComponent';
-   export type { NewComponentProps } from './components/NewComponent/NewComponent';
+   export { NewComponent } from "./components/NewComponent/NewComponent";
+   export type { NewComponentProps } from "./components/NewComponent/NewComponent";
    ```
 
 4. Test and commit!
@@ -186,6 +191,7 @@ npm run build-storybook
 ### Changing Theme Variables
 
 Edit `src/styles/index.css` to customize:
+
 - Colors
 - Typography
 - Spacing
@@ -201,9 +207,10 @@ All components use `ac-` prefix for CSS classes to avoid conflicts. Change in in
 The workflow automatically bumps **patch** versions. To change:
 
 Edit `.github/workflows/publish.yml`:
+
 ```yaml
 - name: Bump version
-  run: npm version minor  # or 'major'
+  run: npm version minor # or 'major'
 ```
 
 ## ⚠️ Important Notes
@@ -216,6 +223,7 @@ Edit `.github/workflows/publish.yml`:
 ## 🐛 Troubleshooting
 
 ### Build Errors
+
 ```bash
 # Clear cache and rebuild
 rm -rf node_modules dist
@@ -224,17 +232,20 @@ npm run build
 ```
 
 ### Publishing Errors
+
 - Verify `NPM_TOKEN` is set correctly in GitHub secrets
 - Check package name is unique on NPM
 - Ensure you have publishing rights
 
 ### Type Errors
+
 - Run `npm run build` to check TypeScript compilation
 - Check `tsconfig.json` settings
 
 ## 📞 Support
 
 For issues and questions:
+
 - Open an issue on GitHub
 - Check existing documentation
 - Review Storybook examples
@@ -242,6 +253,7 @@ For issues and questions:
 ## 🎉 Success!
 
 If you've followed this guide, you now have:
+
 - ✅ A fully functional component library
 - ✅ Automated NPM publishing
 - ✅ Storybook documentation

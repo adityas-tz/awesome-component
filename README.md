@@ -5,14 +5,14 @@ A modern, lightweight React component library built with TypeScript.
 ## Installation
 
 ```bash
-npm i awesome-components
+npm i awesome-components-react
 ```
 
 ## Usage
 
 ```tsx
-import { Button, Modal, Input } from 'awesome-components';
-import 'awesome-components/styles.css';
+import { Button, Modal, Input } from "awesome-components-react";
+import "awesome-components-react/styles.css";
 
 function App() {
   return (
