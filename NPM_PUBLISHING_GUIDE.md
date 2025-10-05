@@ -1,4 +1,4 @@
-# 📦 NPM Publishing Guide for awesome-components
+# 📦 NPM Publishing Guide for awesome-components-react
 
 ## ✅ Current Status
 
@@ -15,11 +15,13 @@ Your library is **READY TO PUBLISH**! ✨
 You may see TypeScript errors in VS Code (like "Property 'div' does not exist on type 'JSX.IntrinsicElements'"), but **these are false positives**. The build completes successfully! To fix these editor errors:
 
 **Option 1: Restart VS Code TypeScript Server**
+
 1. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac)
 2. Type "TypeScript: Restart TS Server"
 3. Press Enter
 
 **Option 2: Reload VS Code Window**
+
 1. Press `Ctrl+Shift+P`
 2. Type "Developer: Reload Window"
 3. Press Enter
@@ -36,36 +38,38 @@ Edit `package.json` and update these fields:
 
 ```json
 {
-  "name": "awesome-components",  // ⚠️ Change if name is taken (see below)
+  "name": "awesome-components-react", // ⚠️ Change if name is taken (see below)
   "version": "0.1.0",
   "description": "A modern, lightweight React component library with TypeScript support",
   "author": "Your Name <your.email@example.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR-USERNAME/awesome-components.git"  // ⚠️ Update this
+    "url": "https://github.com/YOUR-USERNAME/awesome-components-react.git" // ⚠️ Update this
   },
   "bugs": {
-    "url": "https://github.com/YOUR-USERNAME/awesome-components/issues"
+    "url": "https://github.com/YOUR-USERNAME/awesome-components-react/issues"
   },
-  "homepage": "https://github.com/YOUR-USERNAME/awesome-components#readme"
+  "homepage": "https://github.com/YOUR-USERNAME/awesome-components-react#readme"
 }
 ```
 
 #### ⚠️ Check Package Name Availability
 
-The name `awesome-components` might already be taken on NPM. Check availability:
+The name `awesome-components-react` might already be taken on NPM. Check availability:
 
 ```powershell
-npm search awesome-components
+npm search awesome-components-react
 ```
 
 **If the name is taken**, you have two options:
 
 1. **Use a scoped package** (recommended):
+
    ```json
-   "name": "@your-username/awesome-components"
+   "name": "@your-username/awesome-components-react"
    ```
-   Then install with: `npm i @your-username/awesome-components`
+
+   Then install with: `npm i @your-username/awesome-components-react`
 
 2. **Choose a different name**:
    ```json
@@ -93,7 +97,7 @@ If you don't have an NPM account:
 #### 4.1 Create GitHub Repository
 
 1. Go to [https://github.com/new](https://github.com/new)
-2. Repository name: `awesome-components` (or your chosen name)
+2. Repository name: `awesome-components-react` (or your chosen name)
 3. Keep it **public** (required for free NPM publishing)
 4. **Don't** initialize with README (we already have one)
 5. Click **Create repository**
@@ -122,10 +126,10 @@ git init
 git add .
 
 # Create initial commit
-git commit -m "Initial commit: awesome-components library"
+git commit -m "Initial commit: awesome-components-react library"
 
 # Add GitHub remote (replace YOUR-USERNAME with your GitHub username)
-git remote add origin https://github.com/YOUR-USERNAME/awesome-components.git
+git remote add origin https://github.com/YOUR-USERNAME/awesome-components-react.git
 
 # Push to GitHub (this will trigger automatic publishing!)
 git branch -M main
@@ -143,6 +147,7 @@ Once you push to the `main` branch, GitHub Actions will automatically:
 5. ✅ Publish to NPM (`npm publish`)
 
 **Watch the workflow:**
+
 1. Go to your GitHub repository
 2. Click **Actions** tab
 3. You'll see "Publish to NPM" workflow running
@@ -169,6 +174,7 @@ git push origin main
 ```
 
 Each push to `main` will:
+
 - Automatically bump the patch version (0.1.1 → 0.1.2 → 0.1.3...)
 - Publish the new version to NPM
 
@@ -210,15 +216,15 @@ After publishing, test it in a new project:
 
 ```powershell
 # Create a test directory
-mkdir test-awesome-components
-cd test-awesome-components
+mkdir test-awesome-components-react
+cd test-awesome-components-react
 
 # Create a new React project
 npx create-react-app my-app
 cd my-app
 
 # Install your published package
-npm install awesome-components
+npm install awesome-components-react
 
 # Test imports
 ```
@@ -226,8 +232,8 @@ npm install awesome-components
 Create a test file `src/App.js`:
 
 ```javascript
-import { Button, Card, Badge } from 'awesome-components';
-import 'awesome-components/styles.css';
+import { Button, Card, Badge } from "awesome-components-react";
+import "awesome-components-react/styles.css";
 
 function App() {
   return (
@@ -249,9 +255,9 @@ export default App;
 
 After publishing:
 
-1. **NPM Package Page**: `https://www.npmjs.com/package/awesome-components`
+1. **NPM Package Page**: `https://www.npmjs.com/package/awesome-components-react`
 2. **Check downloads**: See stats on your NPM package page
-3. **View in NPM search**: `npm search awesome-components`
+3. **View in NPM search**: `npm search awesome-components-react`
 
 ---
 
@@ -260,11 +266,13 @@ After publishing:
 Your package follows [Semantic Versioning](https://semver.org/):
 
 - **Patch** (0.1.0 → 0.1.1): Bug fixes, small tweaks
+
   ```powershell
   npm version patch
   ```
 
 - **Minor** (0.1.0 → 0.2.0): New features, backward compatible
+
   ```powershell
   npm version minor
   ```
@@ -298,14 +306,16 @@ Before your first publish, verify:
 Once you complete Step 5 (push to GitHub), your package will be **automatically published** to NPM! 🚀
 
 **Your users will install it with:**
+
 ```bash
-npm install awesome-components
+npm install awesome-components-react
 ```
 
 **And use it like:**
+
 ```javascript
-import { Button, Card, Modal } from 'awesome-components';
-import 'awesome-components/styles.css';
+import { Button, Card, Modal } from "awesome-components-react";
+import "awesome-components-react/styles.css";
 ```
 
 ---
@@ -313,25 +323,30 @@ import 'awesome-components/styles.css';
 ## ❓ Troubleshooting
 
 ### "Package name already exists"
-- Use a scoped package: `@your-username/awesome-components`
+
+- Use a scoped package: `@your-username/awesome-components-react`
 - Or choose a different name
 
 ### "401 Unauthorized" during publish
+
 - Check NPM_TOKEN is correctly set in GitHub secrets
 - Ensure token has "Automation" permissions
 - Token might be expired - generate a new one
 
 ### "npm ERR! 403 Forbidden"
+
 - You don't have permission to publish this package name
 - The name is already taken by someone else
 - Use a scoped package or different name
 
 ### Build fails in GitHub Actions
+
 - Check the Actions tab for detailed logs
 - Ensure all tests pass locally: `npm test`
 - Verify build works locally: `npm run build`
 
 ### TypeScript errors in editor (but build succeeds)
+
 - Restart TypeScript server: `Ctrl+Shift+P` → "TypeScript: Restart TS Server"
 - Or reload VS Code window
 - These don't affect the actual build or publishing

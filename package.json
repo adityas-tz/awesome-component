@@ -1,14 +1,14 @@
 {
-    "name": "awesome-components",
+    "name": "awesome-components-react",
     "version": "0.1.0",
     "description": "A modern, lightweight React component library with TypeScript support",
-    "main": "./dist/awesome-components.cjs.js",
-    "module": "./dist/awesome-components.esm.js",
+    "main": "./dist/awesome-components-react.cjs.js",
+    "module": "./dist/awesome-components-react.esm.js",
     "types": "./dist/index.d.ts",
     "exports": {
         ".": {
-            "import": "./dist/awesome-components.esm.js",
-            "require": "./dist/awesome-components.cjs.js",
+            "import": "./dist/awesome-components-react.esm.js",
+            "require": "./dist/awesome-components-react.cjs.js",
             "types": "./dist/index.d.ts"
         },
         "./styles.css": "./dist/style.css"
@@ -38,7 +38,7 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/yourusername/awesome-components.git"
+        "url": "https://github.com/yourusername/awesome-components-react.git"
     },
     "peerDependencies": {
         "react": "^18.0.0",

@@ -12,21 +12,21 @@ export default meta;
 type Story = StoryObj<typeof Pagination>;
 
 export const Default: Story = {
-    render: () => {
+    render: function DefaultRender() {
         const [page, setPage] = useState(1);
         return <Pagination currentPage={page} totalPages={10} onPageChange={setPage} />;
     },
 };
 
 export const ManyPages: Story = {
-    render: () => {
+    render: function ManyPagesRender() {
         const [page, setPage] = useState(5);
         return <Pagination currentPage={page} totalPages={50} onPageChange={setPage} />;
     },
 };
 
 export const WithoutFirstLast: Story = {
-    render: () => {
+    render: function WithoutFirstLastRender() {
         const [page, setPage] = useState(1);
         return <Pagination currentPage={page} totalPages={10} onPageChange={setPage} showFirstLast={false} />;
     },

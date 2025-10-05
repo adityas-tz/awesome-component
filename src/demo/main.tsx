@@ -10,7 +10,7 @@ import { Tabs } from '../components/Tabs/Tabs';
 import { ToastProvider, useToast } from '../components/Toast/Toast';
 import '../styles/index.css';
 
-const DemoApp = () => {
+export const DemoApp = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const { addToast } = useToast();
 
@@ -94,7 +94,7 @@ const DemoApp = () => {
     );
 };
 
-const App = () => (
+export const App = () => (
     <ToastProvider>
         <DemoApp />
     </ToastProvider>
