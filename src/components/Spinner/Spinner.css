@@ -1,0 +1,35 @@
+.ac-spinner {
+    border: 3px solid var(--ac-gray-200);
+    border-top-color: var(--ac-primary);
+    border-radius: var(--ac-radius-full);
+    animation: ac-spinner-rotate 0.8s linear infinite;
+    display: inline-block;
+}
+
+.ac-spinner--sm {
+    width: 1rem;
+    height: 1rem;
+    border-width: 2px;
+}
+
+.ac-spinner--md {
+    width: 2rem;
+    height: 2rem;
+    border-width: 3px;
+}
+
+.ac-spinner--lg {
+    width: 3rem;
+    height: 3rem;
+    border-width: 4px;
+}
+
+@keyframes ac-spinner-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

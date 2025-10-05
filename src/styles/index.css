@@ -1,0 +1,86 @@
+/* Reset and base styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Colors */
+    --ac-primary: #3b82f6;
+    --ac-primary-hover: #2563eb;
+    --ac-primary-active: #1d4ed8;
+    --ac-secondary: #6b7280;
+    --ac-secondary-hover: #4b5563;
+    --ac-secondary-active: #374151;
+    --ac-success: #10b981;
+    --ac-danger: #ef4444;
+    --ac-warning: #f59e0b;
+    --ac-info: #3b82f6;
+
+    /* Grays */
+    --ac-gray-50: #f9fafb;
+    --ac-gray-100: #f3f4f6;
+    --ac-gray-200: #e5e7eb;
+    --ac-gray-300: #d1d5db;
+    --ac-gray-400: #9ca3af;
+    --ac-gray-500: #6b7280;
+    --ac-gray-600: #4b5563;
+    --ac-gray-700: #374151;
+    --ac-gray-800: #1f2937;
+    --ac-gray-900: #111827;
+
+    /* Typography */
+    --ac-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    --ac-font-size-xs: 0.75rem;
+    --ac-font-size-sm: 0.875rem;
+    --ac-font-size-base: 1rem;
+    --ac-font-size-lg: 1.125rem;
+    --ac-font-size-xl: 1.25rem;
+
+    /* Spacing */
+    --ac-spacing-xs: 0.25rem;
+    --ac-spacing-sm: 0.5rem;
+    --ac-spacing-md: 1rem;
+    --ac-spacing-lg: 1.5rem;
+    --ac-spacing-xl: 2rem;
+
+    /* Border radius */
+    --ac-radius-sm: 0.25rem;
+    --ac-radius-md: 0.375rem;
+    --ac-radius-lg: 0.5rem;
+    --ac-radius-full: 9999px;
+
+    /* Shadows */
+    --ac-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --ac-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --ac-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --ac-shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+    /* Transitions */
+    --ac-transition: all 0.2s ease-in-out;
+}
+
+.ac-component {
+    font-family: var(--ac-font-family);
+    font-size: var(--ac-font-size-base);
+    line-height: 1.5;
+    color: var(--ac-gray-900);
+}
+
+/* Utility classes */
+.ac-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
