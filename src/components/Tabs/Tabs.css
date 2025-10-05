@@ -1,0 +1,36 @@
+.ac-tabs {
+    width: 100%;
+}
+
+.ac-tabs-header {
+    display: flex;
+    border-bottom: 2px solid var(--ac-gray-200);
+    gap: 0.5rem;
+}
+
+.ac-tabs-tab {
+    padding: 0.75rem 1.25rem;
+    background: none;
+    border: none;
+    font-family: var(--ac-font-family);
+    font-size: var(--ac-font-size-base);
+    font-weight: 500;
+    color: var(--ac-gray-600);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    transition: var(--ac-transition);
+}
+
+.ac-tabs-tab:hover {
+    color: var(--ac-primary);
+}
+
+.ac-tabs-tab--active {
+    color: var(--ac-primary);
+    border-bottom-color: var(--ac-primary);
+}
+
+.ac-tabs-content {
+    padding: 1.5rem 0;
+}
