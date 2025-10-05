@@ -1,0 +1,59 @@
+.ac-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+    width: 100%;
+}
+
+.ac-input-label {
+    font-size: var(--ac-font-size-sm);
+    font-weight: 500;
+    color: var(--ac-gray-700);
+}
+
+.ac-input {
+    width: 100%;
+    padding: 0.625rem 0.875rem;
+    font-family: var(--ac-font-family);
+    font-size: var(--ac-font-size-base);
+    color: var(--ac-gray-900);
+    background-color: white;
+    border: 1px solid var(--ac-gray-300);
+    border-radius: var(--ac-radius-md);
+    transition: var(--ac-transition);
+    outline: none;
+}
+
+.ac-input:hover:not(:disabled) {
+    border-color: var(--ac-gray-400);
+}
+
+.ac-input:focus {
+    border-color: var(--ac-primary);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.ac-input:disabled {
+    background-color: var(--ac-gray-50);
+    color: var(--ac-gray-500);
+    cursor: not-allowed;
+}
+
+.ac-input--error {
+    border-color: var(--ac-danger);
+}
+
+.ac-input--error:focus {
+    border-color: var(--ac-danger);
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.ac-input-error {
+    font-size: var(--ac-font-size-sm);
+    color: var(--ac-danger);
+}
+
+.ac-input-helper {
+    font-size: var(--ac-font-size-sm);
+    color: var(--ac-gray-500);
+}

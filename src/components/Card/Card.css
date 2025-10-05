@@ -1,0 +1,24 @@
+.ac-card {
+    background-color: white;
+    border: 1px solid var(--ac-gray-200);
+    border-radius: var(--ac-radius-lg);
+    box-shadow: var(--ac-shadow-sm);
+    overflow: hidden;
+}
+
+.ac-card-header {
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid var(--ac-gray-200);
+    font-weight: 600;
+    font-size: var(--ac-font-size-lg);
+}
+
+.ac-card-body {
+    padding: 1.5rem;
+}
+
+.ac-card-footer {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid var(--ac-gray-200);
+    background-color: var(--ac-gray-50);
+}

@@ -1,0 +1,40 @@
+.ac-tooltip-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.ac-tooltip {
+    position: absolute;
+    background-color: var(--ac-gray-900);
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border-radius: var(--ac-radius-md);
+    font-size: var(--ac-font-size-sm);
+    white-space: nowrap;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.ac-tooltip--top {
+    bottom: calc(100% + 0.5rem);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ac-tooltip--bottom {
+    top: calc(100% + 0.5rem);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ac-tooltip--left {
+    right: calc(100% + 0.5rem);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ac-tooltip--right {
+    left: calc(100% + 0.5rem);
+    top: 50%;
+    transform: translateY(-50%);
+}

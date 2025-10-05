@@ -1,0 +1,51 @@
+.ac-pagination {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.ac-pagination-button {
+    min-width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    background-color: white;
+    border: 1px solid var(--ac-gray-300);
+    border-radius: var(--ac-radius-md);
+    font-family: var(--ac-font-family);
+    font-size: var(--ac-font-size-sm);
+    font-weight: 500;
+    color: var(--ac-gray-700);
+    cursor: pointer;
+    transition: var(--ac-transition);
+}
+
+.ac-pagination-button:hover:not(:disabled) {
+    background-color: var(--ac-gray-100);
+    border-color: var(--ac-gray-400);
+}
+
+.ac-pagination-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.ac-pagination-button--active {
+    background-color: var(--ac-primary);
+    border-color: var(--ac-primary);
+    color: white;
+}
+
+.ac-pagination-button--active:hover {
+    background-color: var(--ac-primary-hover);
+    border-color: var(--ac-primary-hover);
+}
+
+.ac-pagination-ellipsis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.5rem;
+    height: 2.5rem;
+    color: var(--ac-gray-500);
+    font-size: var(--ac-font-size-sm);
+}
