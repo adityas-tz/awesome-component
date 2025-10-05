@@ -1,6 +1,6 @@
 {
     "name": "awesome-components-react",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "A modern, lightweight React component library with TypeScript support",
     "main": "./dist/awesome-components-react.cjs.js",
     "module": "./dist/awesome-components-react.esm.js",
